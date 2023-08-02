@@ -1,0 +1,143 @@
+/* CSS for MyCart component
+div {
+    font-family: 'Arial', sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  p {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+  }
+   */
+
+
+   /* MyCart.css */
+.my-cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .my-cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .my-cart-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .my-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .my-cart-table th,
+  .my-cart-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .my-cart-table th {
+    text-align: left;
+  }
+  
+  .my-cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .my-cart-item-name {
+    font-size: 16px;
+  }
+  
+  .my-cart-item-price {
+    font-size: 16px;
+  }
+  
+  .my-cart-item-count {
+    width: 50px;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .my-cart-remove-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .my-cart-buy-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .my-cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .my-cart-empty {
+    font-size: 18px;
+    text-align: center;
+    margin: 40px;
+    color: #999;
+  }
+  
+  .my-cart-empty img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
