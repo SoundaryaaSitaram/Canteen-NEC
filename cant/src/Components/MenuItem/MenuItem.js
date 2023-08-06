@@ -3,18 +3,16 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "./MenuItem.css";
 
 export const MenuItem = ({ itemName,imageSrc, altText, price,onAddToCart }) => {
-    // const handleAddToCart = () => {
-    //     onAddToCart(itemName, price);
-    //   };    
+
+    const [isDisabled, setIsDisabled] = useState(false);
     const handleAddToCart = () => {
       const numericPrice = parseInt(price.replace("Rs.", ""));
       onAddToCart(itemName, numericPrice);
-    };
-    // const handleAddToCart = (itemName, price) => {
-    //   const numericPrice = parseInt(price.replace("Rs.", ""));
-    //   // Rest of the function remains the same
-    // };    
+      setIsAddedToCart(true);
+      setIsDisabled(true);
+    }; 
     const [isHovered, setIsHovered] = useState(false);
+    const [isAddedToCart, setIsAddedToCart] = useState(false); 
 
     const handleMouseEnter = () => {
       setIsHovered(true);
@@ -34,9 +32,8 @@ export const MenuItem = ({ itemName,imageSrc, altText, price,onAddToCart }) => {
         {isHovered && (
           <div className="item-details">
             <span className='itemName-Price'>{itemName}-{price}</span>
-            {/* <span className="price">{price}</span> */}
-            <button className="add-to-cart" onClick={handleAddToCart}>
-              <ShoppingCartIcon/> Add to Cart
+            <button className="add-to-cart" onClick={handleAddToCart} disabled={isDisabled}>
+            <ShoppingCartIcon /> {isAddedToCart ? "Added to Cart" : "Add to Cart" }
             </button>
           </div>
         )}

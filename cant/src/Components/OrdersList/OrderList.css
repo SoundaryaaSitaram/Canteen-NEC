@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #f90606;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody td ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  tbody td ul li {
+    margin-bottom: 5px;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  

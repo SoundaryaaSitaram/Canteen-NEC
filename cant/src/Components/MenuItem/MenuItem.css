@@ -15,7 +15,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s;
-    backdrop-filter: blur(5px); /* Add backdrop filter to blur the background */
+    backdrop-filter: blur(5px); 
     background-color:rgba(178, 157, 157, 0.612); 
     color: #000000;
     font-size: 22px;

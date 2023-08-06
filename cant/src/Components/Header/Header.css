@@ -1,35 +1,36 @@
-.header
-{
+.header {
     display: flex;
     height: 100px;
     width: 100%;
     top: 0;
-    position: sticky;
-    background-color: rgba(190, 237, 223, 0.674);
-    
-}
-.headelem_left
-{
+    position: fixed; 
+    background-color: rgb(190, 237, 223); 
+    z-index: 999;
+  }
+  
+  .headelem_left {
     display: flex;
     flex: 0.4;
     color: rgb(255, 0, 0);
     margin-left: 80px;
     font-size: 16px;
     font-weight: bold;
-}
-.headelem_right
-{
+    margin-top: 20px;
+  }
+  
+  .headelem_right {
     display: flex;
     flex: 0.6;
     padding: 5px;
     justify-content: space-evenly;
     font-size: 12px;
     cursor: pointer;
-}
-
-.headelem_right > span > .MuiIconButton-root .MuiSvgIcon-root
-{
-    display: flex;
+    margin-top: 20px;
+  }
+  
+  .profile > span > .MuiIconButton-root .MuiSvgIcon-root {
     color: rgb(255, 0, 0);
-    font-size: 40px;
-}
+    font-size: 45px;
+    margin-top: 10px;
+  }
+  

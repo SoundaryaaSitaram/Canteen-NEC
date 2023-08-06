@@ -35,29 +35,16 @@ export const Menu = () => {
     const generateUniqueId = () => {
       return Math.random().toString(36).substr(2, 9);
     };
-    // const updateCart = (cartItems, newItem) => {
-    //   const updatedCartItems = { ...cartItems };
-    //   if (updatedCartItems[newItem.id]) {
-    //     updatedCartItems[newItem.id].count += 1;
-    //   } else {
-    //     updatedCartItems[newItem.id] = { ...newItem, count: 1 };
-    //   }
-    //   return updatedCartItems;
-    // };
+
     const handleTabChange = (event,newValue)=>
     {
         setActiveTab(newValue);
     ;}
 
-    // const handleAddToCart = (itemName, price) => {
-    //     const newItem = { itemName, price, count: 1 };
-    //     setCartItems((prevItems) => [...prevItems, newItem]);
-    //   };
     const handleAddToCart = (itemName, price) => {
       const existingItem = cartItems.find(item => item.itemName === itemName);
     
       if (existingItem) {
-        // If the item exists in the cart, update its count
         const updatedCartItems = cartItems.map(item => {
           if (item.itemName === itemName) {
             return { ...item, count: item.count + 1 };
@@ -67,19 +54,13 @@ export const Menu = () => {
     
         setCartItems(updatedCartItems);
       } else {
-        // If the item does not exist in the cart, add it with count = 1
+
         const newItem = { id: generateUniqueId(), itemName, price: parseInt(price), count: 1 };
         setCartItems(prevItems => [...prevItems, newItem]);
       }
     };
     
-    // const cartItemsToMap = (cartItems) => {
-    //   const cartItemsMap = {};
-    //   cartItems.forEach((item) => {
-    //     cartItemsMap[item.id] = item;
-    //   });
-    //   return cartItemsMap;
-    // };
+
 
 
   return (
