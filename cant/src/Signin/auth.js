@@ -56,7 +56,7 @@ export const Auth = () => {
           {showSignup ? (
             <div className='auth-signup'>
               <form className='auth-form'>
-                <h1>CAFE ARYAA</h1> *
+                <h1>CAFE ARYAA</h1> 
                 <div>
                   <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} className='email' value={email} required />
                   <input placeholder="Password" type="password" onChange={(e) => setPassword(e.target.value)} className='password' value={password} required />

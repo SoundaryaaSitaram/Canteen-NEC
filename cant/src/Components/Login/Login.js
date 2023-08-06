@@ -31,7 +31,7 @@ const Login = () => {
       ):(
         <div className='login_container'>
         <div className='login-box'>
-        <h1>CAFE ARYAA</h1> *
+        <h1>CAFE ARYAA</h1> 
           <input
             type="email"
             placeholder="Email"
